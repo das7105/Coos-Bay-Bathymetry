@@ -1,5 +1,5 @@
 # Coos-Bay-Bathymetry
-Coos Bay bathymetry product created from merging different datasets together. Please cite forthcoming paper on Coos Bay bathy (either Eidam et al. 2019 or Conroy et al. 2019). 
+Coos Bay bathymetry product created from merging different datasets together. Please cite forthcoming paper on Coos Bay bathy (either Eidam et al. 2019 or Conroy et al. 2019). The bathymetry is used in numerical simulations of the hydrodynamics of the estuary; hence it is on an unstructured mesh-type grid. 
 
 Bathymetry data for Coos Estuary Oregon
 Dave Sutherland, University of Oregon. (dsuth@uoregon.edu)
