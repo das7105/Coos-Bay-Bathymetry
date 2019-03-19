@@ -29,3 +29,7 @@ Vertical - Mean Sea Level (MSL) (meters)
 Vertical datum information (in meters) is from NOAA (https://tidesandcurrents.noaa.gov/
 datums.html?id=9432780).
 
+MERGING DATA
+To merge the data together, we combine all bathy data together in MATLAB using do_bathymetry.m. This m-file combines data together in non-overlapping regions, relying on the LiDAR dataset wherever possible, and filling in from there. The NOAA DEM is the last product used to fill in gaps (and has elevations everywhere). 
+
+The resulting merged product was smoothed before final use in the model. In addition, we had to quality control several areas of the estuary where data were not available and we knew that deeper depths existed (Isthmus Slough, Coos River, etc.).
