@@ -1,5 +1,5 @@
 # Coos-Bay-Bathymetry
-Coos Bay bathymetry product created from merging different datasets together. Please cite forthcoming paper on Coos Bay bathy (either Eidam et al. 2019 or Conroy et al. 2019). The bathymetry is used in numerical simulations of the hydrodynamics of the estuary; hence it is on an unstructured mesh-type grid. 
+Coos Bay bathymetry product created from merging different datasets together. Please cite forthcoming papers on Coos Bay bathy depending on which file you use: either Emily Eidam et al. 2019 or Ted Conroy et al. 2019). The bathymetry is used in numerical simulations of the hydrodynamics of the estuary; hence it is on an unstructured mesh-type grid. 
 
 Bathymetry data for Coos Estuary Oregon
 Dave Sutherland, University of Oregon. (dsuth@uoregon.edu)
@@ -30,6 +30,7 @@ Vertical datum information (in meters) is from NOAA (https://tidesandcurrents.no
 datums.html?id=9432780).
 
 MERGING DATA
-To merge the data together, we combine all bathy data together in MATLAB using do_bathymetry.m. This m-file combines data together in non-overlapping regions, relying on the LiDAR dataset wherever possible, and filling in from there. The NOAA DEM is the last product used to fill in gaps (and has elevations everywhere). 
+To merge the data together, we take two approaches:
+1) For Emily Eidam's paper on modeling scenarios, we combine all bathy data together in MATLAB using do_bathymetry.m. This m-file combines data together in non-overlapping regions, relying on the LiDAR dataset wherever possible, and filling in from there. The NOAA DEM is the last product used to fill in gaps (and has elevations everywhere). This product is not smoothed and does have 'bumps' and irregularities at certain resolutions. 
 
-The resulting merged product was smoothed before final use in the model. In addition, we had to quality control several areas of the estuary where data were not available and we knew that deeper depths existed (Isthmus Slough, Coos River, etc.).
+2) For Ted Conroy's paper on modeling the year 2014, the same bathymetry sources were used, but the final merged product was weight interpolated using MB-system (https://www.mbari.org/products/research-software/mb-system/) and then interpolated onto the model grid. For areas where limited bathymetry data exist such as in the upper reaches of smaller channels, a linear along channel slope with uniform across channel depth was prescribed. Bathymetry on the model grid was smoothed to a limited degree to maintain the sharp bathymetry gradients that exist due to recurring dredging. 
