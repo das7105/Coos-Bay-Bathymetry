@@ -16,7 +16,7 @@ Coordinate info: Horizontal - Oregon South State Plane North American Data 1983 
 Coordinate info: Horizontal - geographic WGS1984 Vertical - MHW (meters)
 
 4. Single Beam Sonar collected by P. Ruggiero and J. Woods (Oregon State University)
-Coordinate info: Horizontal - Oregon State Plane South (meters) Vertical - NAVD88 (meters). These files have all been processed with an estuary average speed of sound of 1483 m/s. 2017 data here, combined in one text file. 2018 data here (individual transects in separate text files).  
+Coordinate info: Horizontal - Oregon State Plane South (meters) Vertical - NAVD88 (meters). The newer 2017-2018 data are now included here in the file repository, along with a report describing their collection.  
 
 5. ODFW (SEACOR) Horizontal WGS84
 Vertical - MLLW (meters)
